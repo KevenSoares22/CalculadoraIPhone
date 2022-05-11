@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>Hora do dia</title>
+
+</head>
+
+
+
+<body>
+
+<style>
+body{
+margin: 0;
+padding: 0;
+background-color: red;
+}
+
+
+div#Centro{
+background-color: white;
+position: absolute;
+transform: translateX(-50%);
+left: 50%;
+top: 20%;
+width: 300px;
+height: 300px;
+border-radius: 6px;
+box-shadow: 2px 2px 6px grey;
+
+
+
+
+text-align: center;
+}
+h1#Titulo{
+
+text-align: center;
+color: white;
+
+
+
+}
+
+
+</style>
+<div>
+<h1 id="Titulo">Hora do dia</h1>
+</div>
+
+<div id="Centro">
+
+<h2 id="aa">Defina um horario</h2>
+<script>
+var horario = document.getElementById('aa')
+
+var data = new Date()
+var horas = 12;
+
+
+
+
+if(horas >6 && horas <=12){
+
+horario.innerText = `Bom dia!! \n São ${horas} Horas`
+document.body.style.background = "#121212"
+}
+
+else if(horas >12 && horas <=18){
+horario.innerText = `Boa tarde!! \n São ${horas} Horas`
+document.body.style.background = "blue"
+
+}
+
+else{
+horario.innerText = `Boa noite!! \n São ${horas} Horas`
+document.body.style.background = "#222222"
+
+}
+
+</script>
+
+
+</div>
+
+
+
+</body>
+
+</html>
